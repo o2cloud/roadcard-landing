@@ -1,0 +1,55 @@
+.navbar-button {
+    border-color: #E88103;
+    color: #E88103;
+    background-color: #FFE8CC;
+    font-weight: 600;
+    font-size: clamp(16px, 2vw, 20px);
+    padding: 10px 20px;
+}
+
+.navbar-button:hover {
+    color: white;
+    background-color: #E88103;
+    border-color: #FFE8CC;
+}
+
+
+/* Closed state */
+.mobile-dropdown {
+  position: fixed;
+  background: white;
+  border-radius: 30px;
+  box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    padding 0.3s ease;
+
+  z-index: 50;
+}
+
+/* Open */
+.mobile-dropdown-open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  padding: 24px;
+}
+
+/* Closed */
+.mobile-dropdown-closed {
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  padding: 24px;
+}
+
+.nav-item {
+  color: rgba(0, 0, 0, 0.8);
+  transition: color 0.2s ease;
+}
+
+.nav-item:hover {
+  color: #000000;
+}
