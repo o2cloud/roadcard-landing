@@ -1,6 +1,6 @@
 import { useState } from 'react'
 function Footer() {
-	const [isOpen, setIsOpen] = useState(false)
+	const [, setIsOpen] = useState(false)
 	const scrollToSection = (id: string) => {
 		const element = document.getElementById(id)
 
